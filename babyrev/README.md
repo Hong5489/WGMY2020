@@ -172,9 +172,22 @@ Just repeat the steps, until all input is found
 
 If do manually is something like this:
 ```
-???????????????????????????159??
+Known password: ***************************159**
+'1' is at index 27, in SHUFFLE is at index 6 
+'5' is at index 28, in SHUFFLE is at index 25
+'9' is at index 29, in SHUFFLE is at index 4
 
-Unshuffle it --> 
+Then find the value in XOR array:
+XOR[6] -> 6
+XOR[25] -> 1
+XOR[4] -> 9
+
+Then XOR '159' with 6,1,9 -> '740'
+
+Add the result to known password according the index (6,25,4):
+****0*7******************4*159**
+
+Then use the the new part of password to repeat from start
 ```
 
 I solved it with a simple python script:
