@@ -170,6 +170,13 @@ Or you can do the another way round, unshuffle it first then xor it you will get
 
 Just repeat the steps, until all input is found
 
+If do manually is something like this:
+```
+???????????????????????????159??
+
+Unshuffle it --> 
+```
+
 I solved it with a simple python script:
 ```py
 elf = open("./babyrev",'rb').read()
